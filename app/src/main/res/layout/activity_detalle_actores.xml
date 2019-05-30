@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorBackgroundDark"
+    tools:context="com.example.user.pochoclips.views.activities.ActivityDetalleActores">
+
+    <include layout="@layout/app_bar" />
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/contenedor_DetalleActoresActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?actionBarSize">
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/navigationView_DetalleActoresActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:headerLayout="@layout/navigation_view_header"
+            app:itemIconTint="@drawable/selector_item_navigation_view"
+            app:itemTextColor="@drawable/selector_item_navigation_view"
+            app:menu="@menu/menu_navigation_view"
+            android:layout_gravity="start"
+            android:background="@color/colorBackground" />
+
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/viewPagerDetalleActores">
+
+        </android.support.v4.view.ViewPager>
+
+    </android.support.v4.widget.DrawerLayout>
+
+</android.support.constraint.ConstraintLayout>

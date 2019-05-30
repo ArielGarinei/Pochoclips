@@ -1,0 +1,323 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundDark"
+    tools:context="com.example.user.pochoclips.views.fragments.FragmentDetalle">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardViewImageTrailer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageViewImagenPelicula"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="10dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorBackground">
+                        <TextView
+                            android:id="@+id/textViewPuntajeTotal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/estrellita"
+                            android:text="4.5"
+                            android:layout_marginRight="10dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20dp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="4dp"/>
+                        <ImageView
+                            android:id="@+id/estrellita"
+                            android:layout_width="20dp"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/imageButtonFavorito"
+                            android:src="@drawable/ic_stars_black_24dp"
+                            android:layout_gravity="bottom"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </android.support.v7.widget.CardView>
+            <TextView
+                android:id="@+id/textViewNombrePelicula"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Movie Name"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorTexto"
+                android:textSize="25dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardViewRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/colorBackground"
+                    app:cardCornerRadius="10dp"
+                    >
+
+
+                    <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                        android:id="@+id/ratingBar_FragmentDetalle"
+                        style="@style/Widget.MaterialRatingBar.RatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/colorBackground"
+                        android:progressTint="@color/colorPrimary" />
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rate this Movie!"
+                    android:textColor="@color/colorTexto"
+                    android:layout_below="@id/cardViewRatingBar"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="40dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/cardViewRatingBar"
+                    android:id="@+id/linearLayout">
+
+                    <com.varunest.sparkbutton.SparkButton
+                        android:id="@+id/heart_button"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        app:sparkbutton_activeImage="@drawable/ic_heart_on"
+                        app:sparkbutton_iconSize="30dp"
+                        app:sparkbutton_inActiveImage="@drawable/ic_heart_off"
+                        app:sparkbutton_primaryColor="@color/colorPrimary"
+                        app:sparkbutton_secondaryColor="@color/heart_secondary_color" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonRecomendar"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@+id/imageButtonCompartir"
+                        android:background="@color/colorBackgroundDark"
+                        android:src="@drawable/ic_group_black_24dp" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonCompartir"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/colorBackgroundDark"
+                        android:src="@drawable/ic_share_black_24dp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/linearLayout"
+                    android:layout_below="@+id/linearLayout"
+                    android:text="Rating"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorTexto" />
+
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/colorBackground"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@color/colorBackgroundLight"
+                        android:gravity="center"
+                        android:text="Release Date"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTexto"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/textViewReleaseDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:textAlignment="center"
+                        android:background="@color/colorBackground"
+                        android:text="Release Date not available"
+                        android:textColor="@color/colorTexto"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardViewRecyclerActores"
+                android:layout_width="match_parent"
+                android:background="@color/colorBackground"
+                android:layout_height="200dp"
+                android:layout_margin="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@color/colorBackgroundLight"
+                        android:gravity="center"
+                        android:text="Actors"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTexto"
+                        android:textSize="18dp" />
+
+                    <FrameLayout
+                        android:id="@+id/contenedorRecyclerActores"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorBackground"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/colorBackground"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@color/colorBackgroundLight"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:text="Overview"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTexto"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/textVewDescripcion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@color/colorBackground"
+                        android:text="Overview not available"
+                        android:textColor="@color/colorTexto"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardViewRecyclerImagenes"
+                android:layout_width="match_parent"
+                android:background="@color/colorBackground"
+                android:layout_height="200dp"
+                android:layout_margin="5dp"
+                android:visibility="gone"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@color/colorBackgroundLight"
+                        android:gravity="center"
+                        android:text="Images from the Movie"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTexto"
+                        android:textSize="18dp" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerViewImagenesPelicula"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorBackground">
+                    </android.support.v7.widget.RecyclerView>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabVerVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="normal"
+        android:backgroundTint="@color/colorPrimary"
+        android:src="@drawable/ic_play_arrow_black_24dp"
+        app:layout_anchor="@id/imageViewImagenPelicula"
+        app:layout_anchorGravity="right|bottom"
+        />
+</android.support.design.widget.CoordinatorLayout>

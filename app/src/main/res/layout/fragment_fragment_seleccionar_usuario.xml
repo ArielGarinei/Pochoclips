@@ -1,0 +1,17 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#22000000"
+    tools:context="com.example.user.pochoclips.views.fragments.recyclerView.RecyclerviewFragmentSeleccionarUsuario">
+
+  <android.support.v7.widget.RecyclerView
+      android:id="@+id/recyclerViewUsuariosSeleccionar"
+      android:background="@color/colorBackgroundDark"
+      android:layout_gravity="center"
+      android:layout_width="300dp"
+      android:layout_height="450dp"/>
+
+
+</FrameLayout>

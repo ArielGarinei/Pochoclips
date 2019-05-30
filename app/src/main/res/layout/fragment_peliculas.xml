@@ -1,0 +1,33 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".views.fragments.FragmentTAB">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout_FragmentPeliculas"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorBackgroundDark"
+        android:textAlignment="center"
+        app:tabGravity="center"
+        app:tabIndicatorColor="@color/colorPrimary"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/colorPrimary"
+        app:tabTextColor="@color/colorTexto"
+        />
+
+
+    <com.example.user.pochoclips.models.POJO.ViewPagerSinSwipe
+        android:id="@+id/viewPager_TAB_FragmentPeliculas"
+        android:background="@color/colorBackgroundDark"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </com.example.user.pochoclips.models.POJO.ViewPagerSinSwipe>
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.pochoclips.views.fragments.FragmentPeliculasFiltradas"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorBackgroundLight">
+
+        <ImageView
+            android:id="@+id/imagenDelGeneroElegido_ImageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="5dp"
+            android:src="@drawable/pocho_alone"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/nombreDelGeneroElegido_TextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp"
+            android:text="GENRE"
+            android:textColor="@color/colorTexto"
+            android:textSize="35dp"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewPeliculasFiltradas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackgroundDark" />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar_FragmentPeliculasFiltradas"
+            android:indeterminateTint="@color/colorPrimary"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"
+            android:progressTint="@color/colorPrimary"
+
+            />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

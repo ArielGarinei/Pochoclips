@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff9800</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#0d0d0d</color>
+    <color name="colorTexto">#BDBDBD</color>
+    <color name="colorBackground">#212121</color>
+    <color name="colorBackgroundLight">#4f4f4f</color>
+    <color name="colorBackgroundDark">#181818</color>
+    <color name="heart_secondary_color">#8a098c</color>
+</resources>

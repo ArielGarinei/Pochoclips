@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_marginRight="10dp"
+    android:layout_height="160dp"
+    android:orientation="vertical"
+    android:background="@color/colorBackgroundDark">
+
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/colorBackgroundDark"
+        android:id="@+id/imageViewActorCelda"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pocho_alone"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:id="@+id/textViewCeldaNombreActor"
+        android:text="Actor's Name"
+        android:textSize="11dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorTexto"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:id="@+id/textViewCeldaNombrePersonaje"
+        android:text="Character's Name"
+        android:textSize="10dp"
+        android:textColor="@color/colorTexto"
+        android:textAlignment="center"/>
+
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "43266410858",
+    "firebase_url": "https://moacn01c-01.firebaseio.com",
+    "project_id": "moacn01c-01",
+    "storage_bucket": "moacn01c-01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:43266410858:android:42d50ef4db533ab1",
+        "android_client_info": {
+          "package_name": "com.example.user.pochoclips_versionjuli"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "43266410858-il2cprbettg3i8cdibp5svcai7c9hndg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.user.pochoclips_versionjuli",
+            "certificate_hash": "d667d0b75be652b409c140d0ea7783d88be25448"
+          }
+        },
+        {
+          "client_id": "43266410858-lamfui5rhmo46287crovrvrmblm9bggh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5I7TcQDwwGi1-p6Eo6I-K4l-Ucx08IIs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "43266410858-lamfui5rhmo46287crovrvrmblm9bggh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

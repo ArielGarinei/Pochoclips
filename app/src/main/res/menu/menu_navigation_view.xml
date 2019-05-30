@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itemInicio"
+        android:title="Home"
+        android:icon="@drawable/icon_home"
+        android:checkable="true"
+        />
+
+    <item
+        android:id="@+id/itemUsuario"
+        android:title="Profile"
+        android:icon="@drawable/icon_usuario"
+        android:checkable="true"
+        />
+
+    <!--<item
+        android:id="@+id/itemConfiguracion"
+        android:title="Configuracion"
+        android:icon="@drawable/icon_settings"
+        android:checkable="true"
+        />-->
+
+    <item
+        android:id="@+id/itemAcercaDePochoclips"
+        android:title="About Us"
+        android:icon="@drawable/icon_info"
+        android:checkable="true"
+        />
+
+    <item
+        android:id="@+id/itemCerrarSesion"
+        android:title="Sign Out"
+        android:icon="@drawable/icon_exit"
+        android:checkable="true"
+        />
+
+
+</menu>
