@@ -30,13 +30,10 @@
                     android:scheme="https" />
             </intent-filter>
         </activity>
-        <activity android:name=".views.activities.ActivityLogin" />
 
-        <meta-data
-            android:name="com.facebook.sdk.ApplicationId"
-            android:value="@string/facebook_app_id" />
 
         <activity android:name=".views.activities.ActivityDetalleActores" />
+        <activity android:name=".views.activities.ActivityLogin" />
         <activity android:name=".views.activities.ActivityLoading">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

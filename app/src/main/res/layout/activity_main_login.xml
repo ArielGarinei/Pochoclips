@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/cine2"
     tools:context="com.example.user.pochoclips.views.activities.ActivityLogin">
 
-    <ImageView
+   <!-- <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentStart="true"
@@ -20,45 +21,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="110dp"
         android:src="@drawable/logo" />
-
-    <!--<android.support.design.widget.TextInputLayout
-        android:id="@+id/editTextUsuarioOEmail"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_below="@+id/imageViewLogoPochoclips"
-        android:layout_marginTop="30dp"
-        android:textColor="#000000"
-        android:textColorHint="#000000">
-
-        <EditText
-            android:id="@+id/editTextUsuarioOEmailDesign"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="#fff"
-            android:gravity="center"
-            android:hint="Email or Username" />
-
-    </android.support.design.widget.TextInputLayout>
-
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/editTextContraseña"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_below="@+id/editTextUsuarioOEmail"
-        android:background="#fff"
-        android:textColor="#000000"
-        android:textColorHint="#000000">
-
-        <EditText
-            android:id="@+id/editTextContraseñaDesign"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_above="@+id/buttonComencemos"
-            android:layout_alignParentStart="true"
-            android:gravity="center"
-            android:hint="Password" />
-    </android.support.design.widget.TextInputLayout>-->
-
     <Button
         android:id="@+id/buttonComencemos"
         android:layout_width="wrap_content"
@@ -71,62 +33,7 @@
         android:text="Let's Begin!"
         android:textAllCaps="false"
         android:textColor="@color/colorAccent"
-        android:textSize="25dp" />
+        android:textSize="25dp" />-->
 
-    <com.facebook.login.widget.LoginButton
-        android:id="@+id/login_button_facebook"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/buttonComencemos"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="50dp"
-        android:textSize="15dp" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/buttonComencemos"
-        android:layout_centerHorizontal="true"
-        android:layout_marginHorizontal="15dp"
-        android:src="@drawable/linea_o" />
-
-    <com.google.android.gms.common.SignInButton
-        android:id="@+id/login_button_google"
-        android:layout_width="wrap_content"
-        android:layout_height="35dp"
-        android:layout_alignLeft="@+id/login_button_facebook"
-        android:layout_alignRight="@+id/login_button_facebook"
-        android:layout_below="@+id/login_button_facebook"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp">
-
-    </com.google.android.gms.common.SignInButton>
-
-    <ProgressBar
-        android:id="@+id/progressBar_ActivityLogin"
-        style="?android:attr/progressBarStyleLarge"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:indeterminate="true"
-        android:progressDrawable="@drawable/progress_bar_customizado"
-        android:indeterminateDrawable="@drawable/progress_bar_customizado"
-        android:visibility="gone"/>
-
-    <TextView
-        android:id="@+id/textViewCargando_ActivityLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/progressBar_ActivityLogin"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"
-        android:text="Cargando..."
-        android:textColor="@color/colorPrimary"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:visibility="gone"
-
-        />
 
 </RelativeLayout>
